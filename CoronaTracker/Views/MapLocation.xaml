@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoronaTracker.Views.MapLocation"
+             Title="{Binding Title}">
+    <StackLayout Spacing="20" Padding="15">
+        <WebView VerticalOptions="FillAndExpand" Source="{Binding Location, StringFormat='{}https://www.google.com/maps/search/?api=1&amp;query={0}&amp;z=18'}" Grid.Row="0" />
+    </StackLayout>
+</ContentPage>
